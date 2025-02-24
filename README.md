@@ -13,26 +13,7 @@ Welcome to the **Pipedrive Automation Scripts** repository! This project contain
 
 ---
 
-## 🔧 Getting Started
-### 🛠️ Prerequisites
-- Python 3.x
-- Pipedrive API Token
-- Required libraries installed via `pip install -r requirements.txt`
 
-### 🚀 Setup & Installation
-```bash
-# Clone this repository
-$ git clone https://github.com/your-username/pipedrive-automation.git
-$ cd pipedrive-automation
-
-# Install dependencies
-$ pip install -r requirements.txt
-```
-
-### 🏃 Running a Script
-Each script is located in its respective folder. Navigate to the script's directory and run it as follows:
-```bash
-$ python script_name.py
 ```
 
 ## 💡 About LeadOn
