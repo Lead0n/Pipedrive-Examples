@@ -14,7 +14,6 @@ Welcome to the **Pipedrive Automation Scripts** repository! This project contain
 ---
 
 
-```
 
 ## 💡 About LeadOn
 This repository is proudly brought to you by **LeadOn**, the **ultimate tool** for streamlining lead management through **WhatsApp Web and Pipedrive** integration. 
@@ -27,5 +26,4 @@ This repository is proudly brought to you by **LeadOn**, the **ultimate tool** f
 
 💡 **Join the revolution of automated lead management and supercharge your sales team with LeadOn!**
 
-👉 **[Discover LeadOn today](https://www.leadoncrm.com) and transform the way you manage leads!**
-
+👉 **[Discover LeadOn today](https://lead-on.co/) and transform the way you manage leads!**
