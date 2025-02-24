@@ -64,5 +64,5 @@ This script is proudly brought to you by **LeadOn**, a powerful tool that connec
 
 💡 **Join thousands of sales teams who streamline their lead tracking with LeadOn!**
 
-👉 **[Learn more about LeadOn](https://www.leadoncrm.com)**
+👉 **[Learn more about LeadOn](https://lead-on.co/)**
 
