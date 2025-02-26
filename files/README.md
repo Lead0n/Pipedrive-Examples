@@ -5,8 +5,11 @@ This Python script allows you to **bulk download files from Pipedrive** and auto
 
 ### 🔥 Why Use This Script?
 ✅ **Automated File Retrieval** – No more manual downloads!
+
 ✅ **Structured Naming** – Saves files with their **Pipedrive File ID** and related **Deal, Person, Organization, or Lead ID**.  
+
 ✅ **Easy Organization** – Quickly locate files by entity type and ID.
+
 ✅ **Seamless Integration** – Works directly with **Pipedrive’s API**.
 
 ## 📌 How It Works
