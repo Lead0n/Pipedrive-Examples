@@ -8,7 +8,7 @@ This Python script allows you to **bulk download files from Pipedrive** and auto
 
 ✅ **Structured Naming** – Saves files with their **Pipedrive File ID** and related **Deal, Person, Organization, or Lead ID**.  
 
-✅ **Easy Organization** – Quickly locate files by entity type and ID.
+✅ **Easy Organization** – Quickly locate files by Deal and File ID.
 
 ✅ **Seamless Integration** – Works directly with **Pipedrive’s API**.
 
@@ -16,45 +16,51 @@ This Python script allows you to **bulk download files from Pipedrive** and auto
 The script fetches all files from **Pipedrive's Files API**, identifies their associated **Deal, Person, Organization, or Lead**, and then downloads them using a structured naming pattern:
 
 ```plaintext
-[file_id]_[related_entity_id]_[original_filename]
+[file_id]_[deal_id]_[original_filename]
 ```
 For example:
 ```
-123_456_contract.pdf  → (File ID 123, related to Person ID 456)
-987_321_invoice.png  → (File ID 987, related to Deal ID 321)
+00123_0456_contract.pdf  → (File ID 123, related to Deal ID 456)
+00987_0321_invoice.png  → (File ID 987, related to Deal ID 321)
 ```
 
 ## 📥 Installation & Setup
 ### 1️⃣ Prerequisites
-- Python 3.x
+- Python 3.8
 - Pipedrive API Token
-- `requests` package (install via `pip install requests`)
+- A few packages: `requests python-dotenv pathvalidate tqdm`
+  - (Recommended) You can run thing immediately with [uv](https://github.com/astral-sh/uv) via `uv run`; or
+  - Use `pip` instead
 
 ### 2️⃣ Setup Instructions
 ```bash
-# Clone this repository
+# Fork this repository and clone it
 $ git clone https://github.com/your-repo/pipedrive-file-downloader.git
 $ cd pipedrive-file-downloader
 
-# Install dependencies
+# (Optional) If using pip instead of uv, install pip dependencies
 $ pip install requests
 ```
 
 ### 3️⃣ Configuration
-1. Open the script file (`download_files.py`) and replace:
-```python
-API_TOKEN = "YOUR_API_TOKEN"
+1. Make a `.env` file and provide API_TOKEN:
+```bash
+API_TOKEN = YOUR_API_TOKEN
 ```
 with your **Pipedrive API Token**.
 
-2. (Optional) Change the download folder:
+2. (Optional) Open the script file (`getAllFiles.py`) change the download folder:
 ```python
 SAVE_PATH = "./pipedrive_files"
 ```
 
 ### 4️⃣ Run the Script
 ```bash
-$ python download_files.py
+# using uv
+$ uv run getAllFiles.py
+
+# using pip
+$ python getAllFiles.py
 ```
 
 ## 📡 About LeadOn
